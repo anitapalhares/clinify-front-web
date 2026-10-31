@@ -51,5 +51,5 @@ git clone [https://github.com/](https://github.com/)[seu-usuario]/clinify-front-
 # Aceder ao diretório do projeto
 cd clinify-front-web
 
-# Instalar dependências
+# Instalar as dependências
 npm install
