@@ -46,7 +46,7 @@ Certifique-se de ter o **Node.js** (versão 18 ou superior recomendada) e o **np
 
 1. **Clone o repositório:**
 ```bash
-git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
+git clone https://github.com/anitapalhares/clinify-front-web.git
 
 ```
 
