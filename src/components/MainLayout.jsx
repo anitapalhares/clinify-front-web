@@ -228,8 +228,55 @@ export default function MainLayout({ children, showSearch = false, pageClass = '
           {children}
         </main>
 
-        <footer className="rodape-compartilhado">
-          Clinify · Hospital Moinhos de Vento
+        {/* Rodapé Universal com 4 Desenvolvedores, sem Logo e Links para Moinhos e FIAP */}
+        <footer style={{ background: '#fff', borderTop: '1px solid #dce5f0', padding: '40px 48px 24px', marginTop: 'auto', fontSize: '13px', color: '#576a80' }}>
+          <div style={{ maxWidth: '1240px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '32px', marginBottom: '32px' }}>
+            
+            {/* Coluna Esquerda: Descrição e Desenvolvedores (4 nomes, sem Instagram) */}
+            <div style={{ maxWidth: '520px' }}>
+              <p style={{ margin: '0 0 20px', lineHeight: 1.6 }}>
+                Transformando a aprendizagem médica através da tecnologia, gamificação e simulações clínicas interativas, aproximando teoria e prática de forma moderna, acessível e inovadora.
+              </p>
+              
+              <strong style={{ display: 'block', color: '#142945', marginBottom: '10px', fontSize: '14px' }}>Desenvolvedores</strong>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px 24px' }}>
+                <span>• Anita Palhares</span>
+                <span>• Kauã Coelho</span>
+                <span>• Vitória Kereski</span>
+                <span>• Carlos Alberto</span>
+              </div>
+            </div>
+
+            {/* Coluna Direita: Links Genéricos (Saiba mais...) */}
+            <div>
+              <strong style={{ display: 'block', color: '#142945', marginBottom: '12px', fontSize: '14px', borderBottom: '1px solid #dce5f0', paddingBottom: '6px' }}>
+                Saiba mais...
+              </strong>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <li>
+                  <a href="https://www.hospitalmoinhos.org.br/institucional" target="_blank" rel="noreferrer" style={{ color: '#185a9c', textDecoration: 'none', fontWeight: '600' }}>
+                    Hospital Moinhos de Vento
+                  </a>
+                </li>
+                <li>
+                  <a href="https://faculdademoinhos.com.br/" target="_blank" rel="noreferrer" style={{ color: '#185a9c', textDecoration: 'none', fontWeight: '600' }}>
+                    Faculdade Moinhos de Vento
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.fiap.com.br" target="_blank" rel="noreferrer" style={{ color: '#185a9c', textDecoration: 'none', fontWeight: '600' }}>
+                    FIAP
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          {/* Copyright Inferior */}
+          <div style={{ maxWidth: '1240px', margin: '0 auto', borderTop: '1px solid #eff3f9', paddingTop: '20px', textAlign: 'center', fontSize: '12px' }}>
+            © 2026 Clinify. Todos os direitos reservados.
+          </div>
         </footer>
       </div>
     </div>
