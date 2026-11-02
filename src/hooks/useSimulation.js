@@ -49,24 +49,32 @@ export function useSimulation() {
 
   // Simula requisição assíncrona com tratamento de estados
   const carregarCaso = (id) => {
-    setLoading(true);
-    setError(null);
-    setCasoAtual(null);
-    setConcluido(false);
-    setEtapa(0);
-    setPontos(0);
-    setFeedback('');
+  setLoading(true);
+  setError(null);
+  setCasoAtual(null);
+  setConcluido(false);
+  setEtapa(0);
+  setPontos(0);
+  setFeedback('');
 
-    setTimeout(() => {
-      const encontrado = CASOS_MOCK.find((item) => item.id === id);
-      if (encontrado) {
-        setCasoAtual(encontrado);
-      } else {
-        setError('Caso clínico não encontrado na base de dados.');
-      }
+  setTimeout(() => {
+    // Simula erro de conexão se o id for inválido ou forçado para teste
+    if (id === 'erro-teste') {
+      setError('Falha ao comunicar com o servidor clínico. Tente novamente.');
       setLoading(false);
-    }, 700);
-  };
+      return;
+    }
+
+    const encontrado = CASOS_MOCK.find((item) => item.id === id);
+    if (encontrado) {
+      setCasoAtual(encontrado);
+    } else {
+      // Estado de ausência de dados
+      setError('Nenhum dado clínico localizado para os parâmetros informados.');
+    }
+    setLoading(false);
+  }, 600);
+};
 
   const responder = (indiceResposta) => {
     if (!casoAtual) return;

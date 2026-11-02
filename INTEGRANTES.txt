@@ -5,14 +5,3 @@ Anita Palhares | RM: 571264
 Kauã Coelho | RM: 568665
 Vitória Kereski | RM: 569438
 Carlos Alberto | RM: 571841
-
---------------------------------------------------
-DADOS DE ACESSO PARA TESTE DA APLICAÇÃO:
-- Perfil Estudante:
-  E-mail: aluno@clinify.com
-  Senha: 123 (qualquer senha válida)
-
-- Perfil Docente/Professor:
-  E-mail: prof@clinify.com
-  Senha: 123 (qualquer senha válida)
---------------------------------------------------
