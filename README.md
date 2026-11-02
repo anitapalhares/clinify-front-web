@@ -52,7 +52,7 @@ git clone https://github.com/anitapalhares/clinify-front-web.git
 
 2. **Acesse a pasta do projeto:**
 ```bash
-nome-da-pasta-do-projeto
+cd: clinify-front-web
 
 ```
 
